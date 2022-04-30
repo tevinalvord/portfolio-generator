@@ -29,7 +29,7 @@ const generateProjects = projectsArr => {
                             ${languages.join(', ')}
                         </h5>
                         <p>${description}</p>
-                        <a href="${link}" class"btn"><i class="fab fa-github mr-2"></i>View Project on GitHub</a>
+                        <a href="${link}" class="btn"><i class="fab fa-github mr-2"></i>View Project on GitHub</a>
                     </div>
                     `;
                 })
@@ -51,13 +51,14 @@ const generateProjects = projectsArr => {
                     `;
                 })
                 .join('')}
+
             </div>
         </section>
     `;
 };
     
+// export function to generate entire page
 module.exports = templateData => {
-    // console.log(templateData);
     // destructure projects and about data from templateData based on their property key names
     const { projects, about, ...header } = templateData;
 
